@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-image: linear-gradient(#3b3c36,#414a4c);
+    color: white;
+    padding: 10px;
+    min-width: 100%;
+    
+    
+}
+nav ul{
+    padding: 12px
+}
+
+nav li{
+    display: inline;
+    padding: 20px;
+}
+
+.main-nav h1{
+   
+    color:#dcdcdc;
+    margin-right: 100px;
+  
+    float: right;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+    
+    
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: #dcdcdc;
+    font-weight: bold;
+}
+.main-nav a:hover{
+    color: black;
+}
+
+
+.song-dev{
+    margin: 20px;
+    display: flex;
+    border: none;
+}
+
+.song-dev div{
+    border: none;
+}
+
+.song-dev img{
+    opacity: 1;
+    border-radius: 5px;
+    margin: 10px;
+    
+    
+}   
+
+.song-dev img:hover{
+    opacity: 0.5;
+}
+
+footer{
+    background-image: linear-gradient(#3b3c36,#414a4c);
+    text-align: center;
+    min-height: 80px;
+    color: #dcdcdc;
+    padding: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/*button{
+
+    border: none;
+}
+button:focus{
+    border: none;
+}
+
+.main-dev{
+    display: none;
+    width: 400px;
+    height: 400px;
+    background: url('../image/songs-background1.png') no-repeat center/cover;
+    overflow: scroll;
+    color: #dcdcdc;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.main-dev button{
+    color: white;
+    float: right;
+    padding: 10px;
+    
+}
+
+.main-dev button:focus{
+    border: none;
+}
+.icon{
+   
+   color: white;
+}*/
+
+@media(max-width: 600px){
+    nav li{
+        display: block;
+    }
+
+    .main{
+        display: none;
+    }
+
+    .last-dev{
+        display: block;
+    }
+}

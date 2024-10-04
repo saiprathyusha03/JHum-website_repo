@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+         
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            body{
+                background: url("image/login-background.jpg") no-repeat center/cover;
+            }
+            .container{
+                /*background-color: red;*/
+                min-height: 600px ;
+                box-sizing: border-box;
+                width: 600px;
+                margin: auto;
+               
+            }
+            
+            .main-class h2{
+                text-align: center;
+                margin: 30px;
+                color: antiquewhite;
+                margin-top: 30px;
+                
+                
+            }
+
+            #cls-h2{
+                float: right;
+                
+                padding: 10px;
+                margin-right: 20px;
+                font-family: sofia;
+                color: #414a4c;
+                text-shadow: 2px 2px 1px black;
+            }
+            .main-class{
+               /* background-color: yellow;*/
+                margin-top: 40px;
+                margin-right: 130px;
+                min-height: 400px;
+                padding: 60px;
+                width: 600px;
+               
+
+            }
+
+            .input-container{
+                display: flex;
+            }
+            input[type=password], input[type=email]{
+                width: 100%;
+                border: none;
+                margin: 20px;
+                border-radius: 20px;
+                padding: 10px;
+            }
+            .icon{
+                padding: 10px;
+                margin: 20px;
+                color: white;
+            }
+
+            #btn1{
+                width: 100%;
+                background-image: linear-gradient(#3b3c36,#414a4c);
+                border-radius: 20px;
+                padding: 10px;
+                margin: 20px;
+                color: antiquewhite;
+                cursor: pointer;
+                
+                border: none;
+            }
+            #btn1:hover{
+                opacity: 0.5;
+            }
+            #btn{
+                border-radius: 20px;
+                padding: 10px;
+                margin: 20px;
+                width: 100px;
+                background-image: linear-gradient(#3b3c36,#414a4c);
+                cursor: pointer;
+                
+                border: none;
+            }
+            #btn:hover{
+                opacity: 0.5;
+            }
+            #btn a{
+                text-decoration: none;
+                color: antiquewhite;
+                
+            }
+            span{
+                float: right;
+                padding: 30px;
+                color: antiquewhite;
+            }
+            input[type=password]:hover, input[type=email]:hover{
+                background-color: #3b3c36;
+                opacity: 0.5;
+                border: none;
+            }
+            input[type=password]:focus, input[type=email]:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            @media(max-width: 600px){
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                .main-class{
+                    
+                    margin: 0;
+                }
+
+                .main-class h2{
+                    min-width: 50px;
+                    margin-left: -300px;
+                }
+                .input-container{
+                    margin: 0;
+                    
+                    margin-left: -50px;
+                }
+                input[type=password], input[type=email]{
+                    margin-left: -20px;
+                    width: 380px;
+                }
+                #btn1{
+                    width: 400px;
+                    margin-left: 0px;
+                }
+                #btn{
+                    margin-right: 60px;
+                }
+                span{
+                    float: left;
+                    
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h3 id="cls-h2">JHum lyrics</h3>
+        </div>
+        <div class="container">
+        
+            <div class="main-class">
+              <form>
+                <h2>Welcome</h2>
+                
+            
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" id="mail" name="mail" placeholder="Email" required>
+                <br><br>
+            </div>
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input type="password" id="pass" name="pass" placeholder="Enter password" required>
+                <br><br>
+            </div>
+           
+                <button id="btn1" type="submit">Sign in</button><br>
+                
+               
+                <div class="container">
+                    <button id="btn" type="button" class="cancelbtn"><a href="signup.html">Sign up</a></button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+              </form>
+            </div>
+        </div>
+    </body>
+</html>

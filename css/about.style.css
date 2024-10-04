@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body{
+    background-color: wheat;
+}*/
+
+
+.container{
+    background-image: linear-gradient(#3b3c36,#414a4c);
+    color: white;
+    padding: 10px;
+    min-width: 100%;
+    
+    
+}
+nav ul{
+    padding: 12px
+}
+
+nav li{
+    display: inline;
+    padding: 20px;
+}
+
+.main-nav h1{
+   
+    color:#dcdcdc;
+    margin-right: 100px;
+  
+    float: right;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+    
+    
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: #dcdcdc;
+    font-weight: bold;
+}
+.main-nav a:hover{
+    color: black;
+}
+
+.container-1{
+    background: url('../image/about-background1.jpg') no-repeat center/cover;
+    opacity: 0.9;
+    min-width:100%;
+    min-height: 800px;
+}
+
+.container-1 h1{
+    text-align: center;
+    color: #f5f5f5;
+    opacity: 0.7;
+    padding: 200px;
+    font-family: cursive;
+}
+.cls-container-1{
+    
+    width: 700px;
+    min-height: 600px;
+    border: 1px solid white ;
+    font-family: Monospace;
+    border-radius: 20px;
+    margin-top: -150px;
+    /*margin: auto;*/
+    margin-left: 100px;
+    padding: 30px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    
+}
+
+.cls-container-1 h2{
+    
+    margin: 20px;
+    text-shadow: 2px 2px 2px #414a4c;
+    color: #f5f5f5;
+   font-style: italic;
+}
+.cls-container-1 p{
+    color: antiquewhite;
+}
+.container-2{
+    display: flex;
+   
+    
+}
+
+.container-2 img{
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cls-container-2{
+   
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-left: 200px;
+    transition: width 2s;
+    transition-timing-function: linear;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: url('../image/aboutimage.png') no-repeat center/cover;
+    opacity: 0.5;
+}
+
+.cls-container-2:hover{
+    width: 700px;
+    min-height: 300px;
+}
+
+.cls-container-2 h2{
+    font-weight: 200;
+    margin: 20px;
+    color: black;
+}
+.cls-container-2 p{
+    color: #3b3c36;
+    font-weight: bold;
+    margin: 20px;
+}
+footer{
+    background-image: linear-gradient(#3b3c36,#414a4c);
+    text-align: center;
+    min-height: 80px;
+    color: #dcdcdc;
+    padding: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+@media(max-width: 600px){
+    nav li{
+        display: block;
+    }
+    .container-1 h1{
+        
+        margin-left: -150px;
+        text-align: center;
+        font-family: cursive;
+        
+    }
+    .cls-container-1{
+        width: 400px ;
+        margin-left: 50px;
+    }
+    .container-2{
+        display: block;
+    }
+    .cls-container-2{
+        margin-left: 10px;
+        margin-top: 10px;
+        overflow: auto;
+    }
+    .cls-container-2:hover{
+        transition: none;
+        width: 400px;
+    }
+}
